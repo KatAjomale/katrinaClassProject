@@ -11,7 +11,11 @@ body {
   margin: 0 auto;
 }
 header {
-  background-color: #993399;
+  background-image: -webkit-linear-gradient(#660066, #993399);
+  background-image: -moz-linear-gradient(#660066, #993399);
+  background-image: -ms-linear-gradient(#660066, #993399);
+  background-image: -o-linear-gradient(#660066, #993399);
+  background-image: linear-gradient(#660066, #993399);
 }
 header h1 {
   font-size: 24px;
@@ -35,19 +39,19 @@ header nav ul li {
   list-style: none;
   background-color: #391339;
   height: 24px;
-  padding: 5px 0;
+  padding: 0 0 10px 0;
   text-align: center;
 }
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
   display: block;
+  padding: 5px 0;
 }
 header a:hover,
 footer a:hover {
   background-color: #f2d9f2;
   color: #391339;
-  padding: 5px 0;
 }
 #content section.one img {
   width: 100%;
@@ -67,16 +71,16 @@ footer nav ul li {
   list-style: none;
   background-color: #391339;
   height: 24px;
-  padding: 5px 0;
+  padding: 0 0 10px 0;
   text-align: center;
 }
 footer nav ul li a {
   color: #ffffff;
   text-decoration: none;
   display: block;
+  padding: 5px 0;
 }
-/* ASK PAUL: how to make 'hover' fill the whole anchor box? How to make header colour go all way up to top? How to get
-h1 to sit next to image in center and both stay central together - tried taking image outside h1 tag. use positioning?
+/* ASK PAUL: How to get h1 to sit next to image in center and both stay central together - tried taking image outside h1 tag. use positioning?
 HTML - can I put a 'back to top' link but only on mobile version? */
 /*TABLET VERSION */
 @media (min-width: 481px) {
@@ -85,7 +89,11 @@ HTML - can I put a 'back to top' link but only on mobile version? */
     font-size: 16px;
   }
   header h1 {
-    background-color: #993399;
+    background-image: -webkit-linear-gradient(#660066, #993399);
+    background-image: -moz-linear-gradient(#660066, #993399);
+    background-image: -ms-linear-gradient(#660066, #993399);
+    background-image: -o-linear-gradient(#660066, #993399);
+    background-image: linear-gradient(#660066, #993399);
     width: 445px;
     height: 120px;
     padding: 0 0 0 5px;
@@ -97,7 +105,11 @@ HTML - can I put a 'back to top' link but only on mobile version? */
     width: 100px;
   }
   header p {
-    background-color: #993399;
+    background-image: -webkit-linear-gradient(#660066, #993399);
+    background-image: -moz-linear-gradient(#660066, #993399);
+    background-image: -ms-linear-gradient(#660066, #993399);
+    background-image: -o-linear-gradient(#660066, #993399);
+    background-image: linear-gradient(#660066, #993399);
     width: 295px;
     text-align: right;
     margin: 0;
