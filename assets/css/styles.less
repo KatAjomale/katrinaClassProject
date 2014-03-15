@@ -1,0 +1,169 @@
+@import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=Buda:300');
+/* IMPORT FONT FROM GOOGLE FONTS */
+
+/* VARIABLES */
+@basecolor:#993399;
+@lightcolor: lighten(@basecolor, 50%);
+@darkcolor: darken(@basecolor,25%);
+
+/*MOBILE DEVICES*/
+body{
+  font: 14px/1.5 'Buda', sans-serif;
+  color: @darkcolor;
+  background-color: @lightcolor;
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  background-color: @basecolor;
+  h1{
+    font-size: 24px;
+    padding: 0 10px;
+    color: #ffffff;
+    text-align: center;
+    & img{
+      width: 50px;
+    }
+    }
+  p{
+    font-size: 24px;
+    color: @lightcolor;
+    text-align: center;
+  }
+  nav{
+    ul{
+      width: 100%;
+      padding: 0;
+      li{
+        list-style: none;
+        background-color: @darkcolor;
+        height: 24px;
+        padding: 5px 0;
+        text-align: center;
+        a{
+          color:#ffffff;
+          text-decoration: none;
+          display: block;
+         }
+      }
+    }
+  }
+}
+header a:hover, footer a:hover{
+  background-color: @lightcolor;
+  color: @darkcolor;
+  padding: 5px 0;
+}
+
+#content{
+  section.one img{
+    width: 100%;
+  }
+  section.subsection{
+      h2{
+        font-size: 20px;
+        padding: 0 5px
+    }
+    p{
+      padding: 0 5px;
+     & img{
+
+     }
+    }
+  }
+}
+
+footer{
+  nav{
+    ul{
+      width: 100%;
+      padding: 0;
+      li{
+        list-style: none;
+        background-color: @darkcolor;
+        height: 24px;
+        padding: 5px 0;
+        text-align: center;
+        a{
+          color:#ffffff;
+          text-decoration: none;
+          display: block;
+        }
+      }
+    }
+  }
+}
+/* ASK PAUL: how to make 'hover' fill the whole anchor box? How to make header colour go all way up to top? How to get
+h1 to sit next to image in center and both stay central together - tried taking image outside h1 tag. use positioning?
+HTML - can I put a 'back to top' link but only on mobile version? */
+
+/*TABLET VERSION */
+
+@media(min-width:481px){
+  body{
+    width: 750px;
+    font-size: 16px;
+  }
+  header{
+
+    h1{
+      background-color: @basecolor;
+      width: 445px;
+      height: 120px;
+      padding: 0 0 0 5px;
+      text-align: left;
+      margin: 0;
+      float:left;
+      & img{
+        width: 100px;
+      }
+    }
+    p{
+      background-color: @basecolor;
+      width: 295px;
+      text-align: right;
+      margin: 0;
+      height: 24px;
+      padding: 48px 5px 48px 0;
+      float: right;
+    }
+    nav{
+      ul{
+        li{
+          height: 24px;
+          width: 700px/6;
+          float: left;
+          margin: 10px 5px;
+          &.first{
+            margin: 10px 5px 10px 0;
+          }
+          &.last{
+            margin: 10px 0 10px 5px;
+          }
+          a{
+
+          }
+        }
+      }
+    }
+  }
+  .subsection{
+    width: 375px;
+    &.first{
+      float:left;
+  }
+    &.second{
+      float:right;
+    }
+    &.homepage{
+      width: 100%;
+    }
+  }
+
+  footer{
+    clear: both;
+  }
+
+}
+

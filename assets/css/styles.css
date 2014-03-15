@@ -1,0 +1,135 @@
+@import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=Buda:300');
+/* IMPORT FONT FROM GOOGLE FONTS */
+/* VARIABLES */
+/*MOBILE DEVICES*/
+body {
+  font: 14px/1.5 'Buda', sans-serif;
+  color: #391339;
+  background-color: #f2d9f2;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: #993399;
+}
+header h1 {
+  font-size: 24px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+}
+header h1 img {
+  width: 50px;
+}
+header p {
+  font-size: 24px;
+  color: #f2d9f2;
+  text-align: center;
+}
+header nav ul {
+  width: 100%;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  background-color: #391339;
+  height: 24px;
+  padding: 5px 0;
+  text-align: center;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+header a:hover,
+footer a:hover {
+  background-color: #f2d9f2;
+  color: #391339;
+  padding: 5px 0;
+}
+#content section.one img {
+  width: 100%;
+}
+#content section.subsection h2 {
+  font-size: 20px;
+  padding: 0 5px;
+}
+#content section.subsection p {
+  padding: 0 5px;
+}
+footer nav ul {
+  width: 100%;
+  padding: 0;
+}
+footer nav ul li {
+  list-style: none;
+  background-color: #391339;
+  height: 24px;
+  padding: 5px 0;
+  text-align: center;
+}
+footer nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+/* ASK PAUL: how to make 'hover' fill the whole anchor box? How to make header colour go all way up to top? How to get
+h1 to sit next to image in center and both stay central together - tried taking image outside h1 tag. use positioning?
+HTML - can I put a 'back to top' link but only on mobile version? */
+/*TABLET VERSION */
+@media (min-width: 481px) {
+  body {
+    width: 750px;
+    font-size: 16px;
+  }
+  header h1 {
+    background-color: #993399;
+    width: 445px;
+    height: 120px;
+    padding: 0 0 0 5px;
+    text-align: left;
+    margin: 0;
+    float: left;
+  }
+  header h1 img {
+    width: 100px;
+  }
+  header p {
+    background-color: #993399;
+    width: 295px;
+    text-align: right;
+    margin: 0;
+    height: 24px;
+    padding: 48px 5px 48px 0;
+    float: right;
+  }
+  header nav ul li {
+    height: 24px;
+    width: 116.66666666666667px;
+    float: left;
+    margin: 10px 5px;
+  }
+  header nav ul li.first {
+    margin: 10px 5px 10px 0;
+  }
+  header nav ul li.last {
+    margin: 10px 0 10px 5px;
+  }
+  .subsection {
+    width: 375px;
+  }
+  .subsection.first {
+    float: left;
+  }
+  .subsection.second {
+    float: right;
+  }
+  .subsection.homepage {
+    width: 100%;
+  }
+  footer {
+    clear: both;
+  }
+}
