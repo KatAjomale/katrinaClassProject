@@ -145,3 +145,22 @@ HTML - can I put a 'back to top' link but only on mobile version? */
     clear: both;
   }
 }
+/*DESKTOP DEVICES*/
+@media (min-width: 960px) {
+  body {
+    width: 960px;
+  }
+  header h1 {
+    width: 550px;
+  }
+  header p {
+    width: 400px;
+  }
+  header nav ul li {
+    height: 24px;
+    width: 151.66666666666666px;
+  }
+  .subsection {
+    width: 480px;
+  }
+}
