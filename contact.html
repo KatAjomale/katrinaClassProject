@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="UTF-8" />
     <title>Contact Foot Notes</title>
+    <script src="assets/js/min/modernizer.min.js"></script>
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
     <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <style>
+        form.table{
+            display: table;
+            width: 450px;
+            margin: 24px auto;
+        }
+        label.row{
+            display: table-row;
+        }
+        .cell{
+            display: table-cell;
+            width: 75%;
+        }
+        span.cell{
+            width: 25%;
+        }
+    </style>
+
 </head>
 <body>
 <header>
@@ -31,43 +52,43 @@
                 <p><strong>Phone:</strong> <br />01825 721236</p>
                 <p><strong>Address:</strong> <br />4 Great Rough,<br /> Newick, <br />Lewes, <br />BN8 4HY</p>
                 <p>Hours: </p>
-                <p>Google Map to go here... </p>
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10049.74573059337!2d-0.006105705988871056!3d50.97112315344375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758a807bc62b15%3A0x7685a25da7e63be2!2s4+Great+Rough!5e0!3m2!1sen!2suk!4v1395934233432"
+                            width="400" height="300" frameborder="0" style="border:0"></iframe>
+                </p>
 
             </section>
 
             <section class="second subsection">
                 <h2>General Inquiries</h2>
 
-                <form method="get" action="" >
-                    <table>
-                        <tr>
-                            <td><label for="contactname">Name</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="contactname" id="contactname" required /></td>
-                        </tr>
-                        <tr>
-                            <td><label for="contactemail">Email</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="email" name="contactemail" id="contactemail" required /></td>
-                        </tr>
-                        <tr>
-                            <td><label for="contactphone">Phone Number</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="contactphone" id="contactphone" required /></td>
-                        </tr>
-                        <tr>
-                            <td><label for="comment">Message</label></td>
-                        </tr>
-                        <tr>
-                            <td><textarea name="comment" id="comment" cols="18" rows="9" required /></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" name="submit" value="Send Message" /></td>
-                        </tr>
-                    </table>
+                <form method="get" action="" class="table">
+
+                        <label class="row">
+                            <span class="cell">Name</span>
+                            <input type="text" name="contactname" id="contactname" required class="cell"/>
+                        </label>
+
+                        <label class="row">
+                            <span class="cell">Email</span>
+                            <input type="email" name="contactemail" id="contactemail" required class="cell" />
+                        </label>
+
+                        <label class="row">
+                            <span class="cell">Phone Number</span>
+                            <input type="text" name="contactphone" id="contactphone" required class="cell"/>
+                        </label>
+
+                        <label class="row">
+                            <span class="cell">Comment:</span>
+                            <textarea name="comment" id="comment" cols="18" rows="8" required class="cell"></textarea>
+                        </label>
+
+                        <label class="row">
+                            <span class="cell">&nbsp;</span>
+                            <input type="submit" name="submit" value="Send Message" class="cell"/>
+                        </label>
+
                 </form>
 
             </section>
@@ -83,6 +104,8 @@
 
     <p>&copy;Foot Notes Reflexology 2014. All Rights Reserved.</p>
 </footer>
+
+
 
 </body>
 </html>

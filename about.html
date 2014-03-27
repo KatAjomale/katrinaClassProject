@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="UTF-8" />
     <title>About Foot Notes Reflexology</title>
+    <script src="assets/js/min/modernizer.min.js"></script>
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
     <link href="assets/css/styles.css" rel="stylesheet" />
 
 </head>
@@ -29,7 +31,9 @@
             <section class="first subsection">
             <h2>What is Reflexology?</h2>
 
-                <p class="image"><img src="" alt="Reflexology chart" /></p>
+                <p class="image">
+                    <a href="assets/images/Reflexology-chart.jpg" class="test-popup-link" title="Reflexology Chart"><img src="assets/images/Reflexology-chart.jpg" alt="Reflexology chart" /></a>
+                </p>
 
                 <p class="text one">
                     Reflexology is an ancient therapy first used in Egypt in 2,330 BC. It is a therapy that is based on the
@@ -58,7 +62,9 @@
              <section class="second subsection">
              <h2>About the Reflexologist</h2>
 
-                 <p class="image"><img src="" alt="Image of Sue" /></p>
+                 <p class="image">
+                     <a href="assets/images/suePic.jpg" class="test-popup-link" title="The Reflexologist, Sue Chappell"><img src="assets/images/suePic.jpg" alt="Image of Sue" /></a>
+                 </p>
 
                 <p class="text one">
                     Sue Chappell is a member of the Association of Reflexologists, (AoR) having completed a years course
@@ -87,6 +93,18 @@
 
     <p>&copy;Foot Notes Reflexology 2014. All Rights Reserved.</p>
 </footer>
+
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/min/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.image-link').magnificPopup({type:'image'});
+        $('.test-popup-link').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true
+        });
+    });
+</script>
 
 </body>
 </html>
