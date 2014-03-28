@@ -6,7 +6,7 @@
 body {
   font: 14px/1.5 'Buda', sans-serif;
   color: #391339;
-  background-color: #f2d9f2;
+  background-image: url(../../assets/images/textureMotif.png);
   width: 100%;
   margin: 0 auto;
 }
@@ -86,7 +86,7 @@ HTML - can I put a 'back to top' link but only on mobile version? */
 @media (min-width: 481px) {
   body {
     width: 750px;
-    font-size: 16px;
+    font-size: 18px;
   }
   header h1 {
     background-image: -webkit-linear-gradient(#660066, #993399);
