@@ -3,6 +3,7 @@
 /* IMPORT FONT FROM GOOGLE FONTS */
 /* VARIABLES */
 /*MOBILE DEVICES*/
+
 body {
   font: 14px/1.5 'Buda', sans-serif;
   color: #391339;
@@ -17,16 +18,26 @@ header {
   background-image: -o-linear-gradient(#660066, #993399);
   background-image: linear-gradient(#660066, #993399);
 }
+header a{
+    width: 100%;
+}
+header a img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 header h1 {
+  width: 100%;
   font-size: 24px;
-  padding: 0 10px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 }
-header h1 img {
-  width: 50px;
-}
-header p {
+
+header p{
+    width: 100%;
+    margin: 0;
   font-size: 24px;
   color: #f2d9f2;
   text-align: center;
@@ -80,6 +91,7 @@ footer nav ul li a {
   display: block;
   padding: 5px 0;
 }
+
 /* ASK PAUL: How to get h1 to sit next to image in center and both stay central together - tried taking image outside h1 tag. use positioning?
 HTML - can I put a 'back to top' link but only on mobile version? */
 /*TABLET VERSION */
@@ -87,23 +99,32 @@ HTML - can I put a 'back to top' link but only on mobile version? */
   body {
     width: 750px;
     font-size: 18px;
+
   }
+
   header h1 {
     background-image: -webkit-linear-gradient(#660066, #993399);
     background-image: -moz-linear-gradient(#660066, #993399);
     background-image: -ms-linear-gradient(#660066, #993399);
     background-image: -o-linear-gradient(#660066, #993399);
     background-image: linear-gradient(#660066, #993399);
-    width: 445px;
-    height: 120px;
-    padding: 0 0 0 5px;
+    width: 350px;
+    padding: 27.5px 0 27.5px 0;
     text-align: left;
+    font-size: 30px;
     margin: 0;
     float: left;
   }
-  header h1 img {
-    width: 100px;
+  header a img{
+      background-image: -webkit-linear-gradient(#660066, #993399);
+      background-image: -moz-linear-gradient(#660066, #993399);
+      background-image: -ms-linear-gradient(#660066, #993399);
+      background-image: -o-linear-gradient(#660066, #993399);
+      background-image: linear-gradient(#660066, #993399);
+      width: 100px;
+      float: left;
   }
+
   header p {
     background-image: -webkit-linear-gradient(#660066, #993399);
     background-image: -moz-linear-gradient(#660066, #993399);
@@ -114,7 +135,7 @@ HTML - can I put a 'back to top' link but only on mobile version? */
     text-align: right;
     margin: 0;
     height: 24px;
-    padding: 48px 5px 48px 0;
+    padding: 38px 5px 38px 0;
     float: right;
   }
   header nav ul li {
@@ -151,11 +172,9 @@ HTML - can I put a 'back to top' link but only on mobile version? */
     width: 960px;
   }
   header h1 {
-    width: 550px;
+    width: 560px;
   }
-  header p {
-    width: 400px;
-  }
+
   header nav ul li {
     height: 24px;
     width: 151.66666666666666px;
